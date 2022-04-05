@@ -20,9 +20,10 @@ public class MainActivity extends AppCompatActivity {
 
         mywebView = (WebView) findViewById(R.id.webView);
         mywebView.setWebViewClient(new WebViewClient());
-        mywebView.loadUrl("https://mhs.amikom.ac.id/");
+        mywebView.loadUrl("https://gizipedia.netlify.app/");
         WebSettings webSettings = mywebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setDomStorageEnabled(true);
     }
 
     public class mywebClient extends WebViewClient{
